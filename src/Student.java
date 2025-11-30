@@ -27,6 +27,16 @@ public class Student implements Comparable<Student>{
         return name;
     }
 
+    public int getAttendanceCount() {
+        return attendanceCount;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("이름: %s, 학반번호: %d, 출석횟수: %d",
+                name, classNumber, attendanceCount);
+    }
+
     @Override
     public int compareTo(Student other) {
         return Integer.compare(other.attendanceCount, this.attendanceCount);
