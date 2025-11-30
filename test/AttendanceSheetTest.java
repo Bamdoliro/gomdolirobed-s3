@@ -10,9 +10,9 @@ public class AttendanceSheetTest {
 
         AttendanceSheet student = new AttendanceSheet(name, studentId, attendance);
 
-        assertEquals(name, student.name);
-        assertEquals(studentId, student.studentId);
-        assertEquals(attendance, student.numberOfAttendance);
+        assertEquals(name, student.getName());
+        assertEquals(studentId, student.getStudentId());
+        assertEquals(attendance, student.getNumberOfAttendance());
     }
 
     @Test

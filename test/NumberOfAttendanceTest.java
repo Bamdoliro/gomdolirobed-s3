@@ -15,17 +15,17 @@ public class NumberOfAttendanceTest {
 
     @Test
     public void increaseAttendance() {
-        assertEquals(0, students[0].numberOfAttendance);
+        assertEquals(0, students[0].getNumberOfAttendance());
 
         NumberOfAttendance.increase(students, "이밤돌");
 
-        assertEquals(1, students[0].numberOfAttendance);
+        assertEquals(1, students[0].getNumberOfAttendance());
     }
 
     @Test
     public void increaseNonStudent() {
         NumberOfAttendance.increase(students, "없는학생");
 
-        assertEquals(0, students[0].numberOfAttendance);
+        assertEquals(0, students[0].getNumberOfAttendance());
     }
 }

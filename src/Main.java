@@ -27,7 +27,7 @@ public class Main {
             System.out.println(e.getMessage());
         }
         try {
-            student3 = new AttendanceSheet("최시나", 10209, 2);
+                student3 = new AttendanceSheet("최시나", 10209, 2);
         } catch (IllegalArgumentException e) {
             System.out.println(e.getMessage());
         }

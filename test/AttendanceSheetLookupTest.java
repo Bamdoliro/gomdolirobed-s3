@@ -22,9 +22,9 @@ public class AttendanceSheetLookupTest {
     public void lookUpAttendanceSheet() {
         AttendanceSheetLookup.lookup(students);
 
-        assertEquals("김이로", students[0].name);
-        assertEquals("최시나", students[1].name);
-        assertEquals("이밤돌", students[2].name);
+        assertEquals("김이로", students[0].getName());
+        assertEquals("최시나", students[1].getName());
+        assertEquals("이밤돌", students[2].getName());
     }
 
 }

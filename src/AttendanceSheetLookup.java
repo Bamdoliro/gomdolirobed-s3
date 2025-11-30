@@ -6,11 +6,11 @@ public class AttendanceSheetLookup {
             if(a == null && b == null) return 0;
             if (a == null) return 1;
             if (b == null) return -1;
-            return b.numberOfAttendance - a.numberOfAttendance;
+            return b.getNumberOfAttendance() - a.getNumberOfAttendance();
         });
         for (int index = 0; index < students.length; index++) {
             if(students[index] == null) continue;
-            System.out.println("이름 : " + students[index].name + " 학번 : " + students[index].studentId + " 출석일수 : " + students[index].numberOfAttendance);
+            System.out.println("이름 : " + students[index].getName() + " 학번 : " + students[index].getStudentId() + " 출석일수 : " + students[index].getNumberOfAttendance());
         }
     }
 }
