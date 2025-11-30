@@ -39,9 +39,13 @@ public class AttendanceList {
     }
 
     public void printStudents() {
+        students.sort((s1, s2) -> Integer.compare(s2.getAttendance(), s1.getAttendance()));
         for (Student student : students) {
-            System.out.println("Student Name: " + student.getName() + "Student Number: " + student.getNumber() + "Student Attendance:" + student.getAttendance());
+            System.out.println("Student Name: " + student.getName()
+                    + " Student Number: " + student.getNumber()
+                    + " Student Attendance: " + student.getAttendance());
         }
     }
+
 
 }
