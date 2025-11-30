@@ -10,7 +10,6 @@ public class AttendanceList {
 
     public void addStudent(Student student) {
         if (student.getName().length() > 20 && student.getName().isBlank()) throw new IllegalArgumentException("Name is too long or too short");
-        if (student.getAttendance() < 0) throw new IllegalArgumentException("Attendance cannot be negative");
         for (Student s : students) {
             if (s.getName().equals(student.getName()) && s.getNumber().equals(student.getAttendance())) {
                 throw new IllegalArgumentException("Student already exists");
