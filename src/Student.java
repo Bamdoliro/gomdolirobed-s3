@@ -1,4 +1,4 @@
-public class Student implements Comparable<Student> {
+public class Student{
     private final String name;
     private final int classNumber;
     private int attendanceCount;
@@ -26,9 +26,5 @@ public class Student implements Comparable<Student> {
     public String getName() {
         return name;
     }
-
-    @Override
-    public int compareTo(Student o) {
-        return 0;
-    }
+    
 }
