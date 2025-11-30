@@ -3,6 +3,21 @@ public class AttendanceBook {
     private Student[] list = new Student[100];
     private int size = 0;
 
+
+    // 빈 출석부 생성자 (기존)
+    public AttendanceBook() {}
+
+    // 학생을 가진 채로 생성하는 새로운 생성자
+    public AttendanceBook(Student[] initialStudents) {
+        if (initialStudents == null) return;
+
+        for (Student s : initialStudents) {
+            if (s != null) {
+                insert(s);
+            }
+        }
+    }
+
     // 학생 추가
     public void insert(Student s) {
         if (s == null) return;
