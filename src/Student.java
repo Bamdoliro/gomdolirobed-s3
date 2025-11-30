@@ -12,7 +12,11 @@ public class Student implements Comparable<Student> {
         this.name = name;
         this.classNumber = classNumber;
         this.attendanceCount = attendanceCount;
+
     }
 
-
+    @Override
+    public int compareTo(Student o) {
+        return 0;
+    }
 }
