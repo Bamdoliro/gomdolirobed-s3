@@ -4,15 +4,27 @@ public class Student implements Comparable<Student> {
     private int attendanceCount;
 
     public Student(String name, int classNumber, int attendanceCount) {
-        if(name == null || name.length() < 1 || name.length() > 20)
-            throw new IllegalArgumentException("학생의 이름은 1자 이상 20자 이하이어야 합니다.");
-        if(attendanceCount < 0)
-            throw new IllegalArgumentException("출석 횟수는 음수일 수 없습니다.");
+        if(name == null || name.length() < 1 || name.length() > 20) {
+            System.out.println("학생의 이름은 1자 이상 20자 이하이어야 합니다");
+            throw new IllegalArgumentException("학생의 이름은 1자 이상 20자 이하이어야 합니다");
+        }
+        if(attendanceCount < 0) {
+            System.out.println("출석 횟수는 음수일 수 없습니다");
+            throw new IllegalArgumentException("출석 횟수는 음수일 수 없습니다");
+        }
 
         this.name = name;
         this.classNumber = classNumber;
         this.attendanceCount = attendanceCount;
 
+    }
+
+    public void increaseAttendance(int days) {
+        this.attendanceCount += days;
+    }
+
+    public String getName() {
+        return name;
     }
 
     @Override
