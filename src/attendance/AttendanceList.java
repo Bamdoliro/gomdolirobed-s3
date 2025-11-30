@@ -46,6 +46,10 @@ public class AttendanceList {
                     + " Student Attendance: " + student.getAttendance());
         }
     }
+    public void printAttendance(Student student) {
+        if (!students.contains(student)) throw new IllegalArgumentException("Student not found");
+        System.out.println("Student Attendance: " + student.getAttendance());
+    }
 
 
 }
