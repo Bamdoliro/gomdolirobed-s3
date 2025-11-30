@@ -23,7 +23,7 @@ public class Main {
         try {
             Student st4u = new Student("박마루", 20101, -1);
         } catch (IllegalArgumentException e) {
-            System.out.println("잘못된 값을 전달했습니다");
+            System.out.println("잘못된 값을 전달했습니다\n");
         }
 
         // TODO-3 출석부에 학생 삽입
@@ -36,7 +36,7 @@ public class Main {
         try {
             book.addStudent(st1);
         } catch (IllegalArgumentException e) {
-            System.out.println("출석부에 동일한 학생은 추가할 수 없습니다");
+            System.out.println("잘못된 값을 전달했습니다\n");
         }
 
         // 출석부에 이밤돌은 존재하므로 삽입할 수 없다는 메시지가 출력됩니다.
@@ -50,10 +50,13 @@ public class Main {
         // 출석부에 등록된 모든 학생의 정보를 조회합니다.
         // 각 학생들의 이름, 학반번호, 출석횟수를 출력해야합니다.
         // 학생 목록은 출석횟수를 기준으로 내림차순 정렬하여 출력해야 합니다.
+        book.printAllStudents();
 
         // TODO-7 특정 학생 정보 조회
         // 이밤돌의 출석 횟수를 조회합니다.
         // 김이로의 출석 횟수를 조회합니다.
+        book.printAttendance(st1);
+        book.printAttendance(st2);
 
         // TODO-8 출석부에 존재하지 않는 학생 삭제
         // 출석부에서 최시나를 삭제합니다.
