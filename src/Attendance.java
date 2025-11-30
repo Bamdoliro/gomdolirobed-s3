@@ -3,10 +3,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class Attendence {
+public class Attendance {
     private Map<String, Student> students;
 
-    public Attendence() {
+    public Attendance() {
         this.students = new HashMap<>();
     }
     
