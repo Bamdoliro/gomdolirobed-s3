@@ -6,6 +6,7 @@ public class Student {
     private Integer attendance;
 
     public Student(String name, Integer number, Integer attendance) {
+        if (attendance < 0) throw new IllegalArgumentException("Attendance cannot be negative");
         this.name = name;
         this.number = number;
         this.attendance = attendance;
