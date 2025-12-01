@@ -72,7 +72,7 @@ public class Main {
         // 학생 삭제가 정상적으로 되었는지 다시 한 번 출석부의 학생 명단을 조회해 출력합니다.
         students = attendanceBook.getStudents();
         students.stream()
-                .forEach(s -> System.out.printf("이름: %s, 학반: %ㄴ, 출석횟수: %d%n",
+                .forEach(s -> System.out.printf("이름: %s, 학반: %s, 출석횟수: %d%n",
                         s.getName(), s.getIdentifier(), s.getAttendance()));
     }
 }

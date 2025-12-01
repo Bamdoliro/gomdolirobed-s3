@@ -63,7 +63,7 @@ public class AttendanceBook {
             throw new IllegalArgumentException("존재하지 않는 학생 " + identifier + "은 삭제할 수 없습니다.");
         }
 
-        System.out.println(toRemove + "님이 출석부에서 삭제되었습니다");
+        System.out.println(toRemove.getName() + "님이 출석부에서 삭제되었습니다");
     }
 
     public void attendAll() {
