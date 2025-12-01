@@ -57,17 +57,24 @@ public class Main {
         // 김이로의 출석 횟수를 조회합니다.
         book.printAttendance(st1);
         book.printAttendance(st2);
+        System.out.println();
 
         // TODO-8 출석부에 존재하지 않는 학생 삭제
         // 출석부에서 최시나를 삭제합니다.
         // 출석부에 최시나는 없으므로 존재하지 않는 학생은 삭제가 불가능하다는 메시지가 출력됩니다.
+        try {
+            book.removeStudent(st3);
+        } catch (IllegalArgumentException e) {
+            System.out.println("잘못된 값을 전달했습니다\n");
+        }
 
         // TODO-9 출석부에서 학생 삭제
         // 출석부에서 이밤돌을 삭제합니다.
         // 학생이름 + '님이 출석부에서 삭제되었습니다' 라는 메시지가 출력되어야합니다.
+        book.removeStudent(st1);
 
         // TODO-10 삭제 후 출석부 조회
         // 학생 삭제가 정상적으로 되었는지 다시 한 번 출석부의 학생 명단을 조회해 출력합니다.
-
+        book.printAllStudents();
     }
 }
