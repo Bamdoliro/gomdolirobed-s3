@@ -21,7 +21,7 @@ public class Main {
         // 출석횟수가 -1회인 2학년 1반 1번 박마루를 생성합니다.
         // 출석횟수는 음수일 수 없다는 메시지가 출력되고 생성되지 않습니다.
         try {
-            Student st4u = new Student("박마루", 20101, -1);
+            Student st4 = new Student("박마루", 20101, -1);
         } catch (IllegalArgumentException e) {
             System.out.println("잘못된 값을 전달했습니다\n");
         }
