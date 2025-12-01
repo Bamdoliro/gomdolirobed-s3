@@ -1,0 +1,27 @@
+plugins {
+    id 'java'
+}
+
+group = 'hs.bssm.somonox'
+version = '1.0-SNAPSHOT'
+
+
+sourceCompatibility = '21'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.10.0'
+    testImplementation 'org.assertj:assertj-core:3.24.2'
+}
+
+// 표준 Gradle 소스 레이아웃을 사용: src/main/java, src/test/java
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}
