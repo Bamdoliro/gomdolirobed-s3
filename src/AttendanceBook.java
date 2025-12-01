@@ -52,4 +52,13 @@ public class AttendanceBook {
                 student.getName(),
                 student.getAttendanceCount());
     }
+
+    public void removeStudent(Student student) {
+        if(!students.contains(student)) {
+            System.out.println(student.getName() + " : 존재하지 않는 학생은 삭제할 수 없습니다");
+            throw new IllegalArgumentException("출석부에 존재하지 않는 학생입니다");
+        }
+        students.remove(student);
+        System.out.println(student.getName() + "님이 출석부에서 삭제되었습니다\n");
+    }
 }
