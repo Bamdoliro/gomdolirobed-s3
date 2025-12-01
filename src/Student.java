@@ -41,4 +41,11 @@ public class Student implements Comparable<Student>{
     public int compareTo(Student other) {
         return Integer.compare(other.attendanceCount, this.attendanceCount);
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(!(obj instanceof Student)) return false;
+        Student other = (Student) obj;
+        return this.name.equals(other.name) && this.classNumber == other.classNumber;
+    }
 }
