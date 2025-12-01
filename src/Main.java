@@ -18,14 +18,14 @@ public class Main {
         Student student3 = new Student("최시나",10209,2);
         // 출석횟수가 -1회인 2학년 1반 1번 박마루를 생성합니다.
         // 출석횟수는 음수일 수 없다는 메시지가 출력되고 생성되지 않습니다.
-        Student student4 = new Student("박마루", 20101,-1);
+//        Student student4 = new Student("박마루", 20101,-1);
         // TODO-3 출석부에 학생 삽입
         // 생성한 출석부에 이밤돌, 김이로를 삽입합니다.
         attendanceList.addStudent(student1);
         attendanceList.addStudent(student2);
         // TODO-4 출석부에 동일한 학생 삽입
         // 출석부에 이밤돌을 다시 삽입합니다.
-        attendanceList.addStudent(student1);
+//        attendanceList.addStudent(student1);
         // 출석부에 이밤돌은 존재하므로 삽입할 수 없다는 메시지가 출력됩니다.
 
         // TODO-5 출석횟수 증가
@@ -45,7 +45,7 @@ public class Main {
         // TODO-8 출석부에 존재하지 않는 학생 삭제
         // 출석부에서 최시나를 삭제합니다.
         // 출석부에 최시나는 없으므로 존재하지 않는 학생은 삭제가 불가능하다는 메시지가 출력됩니다.
-        attendanceList.deleteStudent(student3);
+//        attendanceList.deleteStudent(student3);
         // TODO-9 출석부에서 학생 삭제
         // 출석부에서 이밤돌을 삭제합니다.
         // 학생이름 + '님이 출석부에서 삭제되었습니다' 라는 메시지가 출력되어야합니다.
