@@ -20,7 +20,7 @@ public class Student {
             throw new IllegalArgumentException("이름은 1자 이상 20자 이하이어야 합니다.");
 
         if (attendance < 0)
-            throw new IllegalArgumentException("참석 숫자는 음수가 될 수 없습니다.");
+            throw new IllegalArgumentException("출석횟수는 음수가 될 수 없습니다.");
 
         this.name = name;
         this.grade = grade;
